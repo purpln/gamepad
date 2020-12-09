@@ -1,8 +1,8 @@
 //
 //  appApp.swift
-//  app
+//  Shared
 //
-//  Created by Sergey Romanenko on 26.10.2020.
+//  Created by Sergey Romanenko on 09.12.2020.
 //
 
 import SwiftUI

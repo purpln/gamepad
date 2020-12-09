@@ -1,8 +1,8 @@
 //
 //  ContentView.swift
-//  app
+//  Shared
 //
-//  Created by Sergey Romanenko on 26.10.2020.
+//  Created by Sergey Romanenko on 09.12.2020.
 //
 
 import SwiftUI
@@ -15,9 +15,7 @@ struct ContentView: View {
     @ObservedObject var gamepad = GameController()
     
     var body: some View {
-        home.onAppear{
-            gamepad.reload()
-        }.preferredColorScheme(.dark)
+        home
     }
     
     var home: some View{
@@ -106,7 +104,7 @@ func battery(_ percentage:Float, _ state:GCDeviceBattery.State)-> String{
     }
 }
 
-struct third_Previews: PreviewProvider {
+struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }

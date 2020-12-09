@@ -2,7 +2,7 @@
 //  GameController.swift
 //  app
 //
-//  Created by Sergey Romanenko on 26.10.2020.
+//  Created by Sergey Romanenko on 09.12.2020.
 //
 
 import GameController
@@ -95,7 +95,7 @@ class GameController: ObservableObject{
         return engine
     }
     
-    func reload(){
+    init(){
         NotificationCenter.default.addObserver(forName: NSNotification.Name.GCControllerDidConnect, object: nil, queue: nil, using: didConnectController)
         NotificationCenter.default.addObserver(forName: NSNotification.Name.GCControllerDidDisconnect, object: nil, queue: nil, using: didDisconnectController)
         GCController.startWirelessControllerDiscovery{}
